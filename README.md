@@ -1,90 +1,40 @@
-# Heart Disease Prediction Using Machine Learning
+# Heart Disease Prediction using Machine Learning
+
+A beginner-level machine learning classification project that predicts the presence or absence of heart disease using clinical patient data.
 
 ## Project Overview
 
-This project uses machine learning to predict the presence of heart disease from clinical patient data.
+The objective of this project is to build a machine learning classification model that predicts whether a patient is likely to have heart disease based on clinical features.
 
-The project is implemented in Python using the UCI Heart Disease dataset. It is a binary classification problem where the target indicates whether heart disease is present or absent.
+The project follows a complete basic machine learning workflow:
 
-## Objective
-
-The main objective is to build and compare machine learning classification models and identify the model that performs best on the given dataset.
+1. Load the dataset
+2. Understand the dataset structure
+3. Clean the data
+4. Handle missing values
+5. Prepare the target variable
+6. Separate features and target
+7. Split the data into training and testing sets
+8. Train machine learning models
+9. Evaluate model performance
+10. Compare the models
+11. Select the best-performing model
 
 ## Dataset
 
-The dataset contains clinical information about 303 patients and 14 variables.
+The project uses the Cleveland heart disease dataset.
 
-### Features
+- **Total records:** 303
+- **Total columns:** 14
+- **Target variable:** `num`
+- **Classification type:** Binary classification
 
-- Age
-- Sex
-- Chest pain type (cp)
-- Resting blood pressure (trestbps)
-- Serum cholesterol (chol)
-- Fasting blood sugar (fbs)
-- Resting electrocardiographic results (restecg)
-- Maximum heart rate achieved (thalach)
-- Exercise-induced angina (exang)
-- ST depression (oldpeak)
-- Slope of the ST segment (slope)
-- Number of major vessels (ca)
-- Thalassemia (thal)
-
-### Target
-
-The original `num` variable was converted into a binary target:
+The original `num` variable contains multiple disease levels. For this project, it was converted into a binary target:
 
 - `0` → No heart disease
-- `1` → Heart disease present
+- `1` → Presence of heart disease
 
-## Technologies Used
+The binary target was created using:
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
-- Google Colab
-- Jupyter Notebook
-
-## Project Workflow
-
-1. Load the dataset
-2. Inspect the dataset structure
-3. Assign meaningful column names
-4. Check data types
-5. Identify missing values
-6. Clean the dataset
-7. Create the binary target variable
-8. Perform exploratory data analysis
-9. Separate features and target
-10. Split data into training and testing sets
-11. Scale features for Logistic Regression
-12. Train Logistic Regression
-13. Train Decision Tree
-14. Train Random Forest
-15. Compare model performance
-16. Evaluate the best-performing model
-
-## Models Used
-
-### Logistic Regression
-
-Used as a baseline classification model.
-
-cc
-
-## Future Improvements
-
-- Perform cross-validation
-- Tune model hyperparameters
-- Compare additional classification algorithms
-- Perform deeper feature analysis
-- Improve model interpretability
-- Develop a simple prediction interface
-
-## Author
-
-Deepika Narra
-
-B.Tech Biotechnology | Aspiring Data Analyst / Data Scientist
+```python
+df_clean["target"] = (df_clean["num"] > 0).astype(int)
