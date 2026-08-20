@@ -90,6 +90,16 @@ An ensemble of decision trees used to improve predictive performance.
 
 Random Forest achieved the highest accuracy among the models tested.
 
+### Best Model: Random Forest
+
+The Random Forest model achieved the best performance among the models tested.
+
+- Accuracy: 86.67%
+- Precision: 88.46%
+- Recall: 82.14%
+- F1-score: 85.19%
+
+The model was evaluated on a separate test set containing 60 patient records.
 ### Random Forest Performance
 
 - Accuracy: 86.67%
