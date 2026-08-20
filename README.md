@@ -72,39 +72,7 @@ The original `num` variable was converted into a binary target:
 
 Used as a baseline classification model.
 
-### Decision Tree
-
-Used to model decision rules based on the clinical features.
-
-### Random Forest
-
-An ensemble of decision trees used to improve predictive performance.
-
-## Results
-
-| Model | Accuracy |
-|---|---:|
-| Logistic Regression | 83.33% |
-| Decision Tree | 75.00% |
-| Random Forest | 86.67% |
-
-Random Forest achieved the highest accuracy among the models tested.
-
-### Best Model: Random Forest
-
-The Random Forest model achieved the best performance among the models tested.
-
-- Accuracy: 86.67%
-- Precision: 88.46%
-- Recall: 82.14%
-- F1-score: 85.19%
-
-The model was evaluated on a separate test set containing 60 patient records.
-
-
-## Important Note
-
-This project is intended for educational and machine learning portfolio purposes. It is not a medical diagnostic system and should not be used to make clinical decisions.
+cc
 
 ## Future Improvements
 
