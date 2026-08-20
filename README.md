@@ -100,12 +100,7 @@ The Random Forest model achieved the best performance among the models tested.
 - F1-score: 85.19%
 
 The model was evaluated on a separate test set containing 60 patient records.
-### Random Forest Performance
 
-- Accuracy: 86.67%
-- Precision: 88.46%
-- Recall: 82.14%
-- F1-score: 85.19%
 
 ## Important Note
 
